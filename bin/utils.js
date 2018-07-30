@@ -20,7 +20,7 @@ var Utils;
     }
     Utils.leftPad = leftPad;
     function roundTo(n, places) {
-        var f = Math.pow(10, places);
+        const f = Math.pow(10, places);
         return Math.round(n * f) / f;
     }
     Utils.roundTo = roundTo;

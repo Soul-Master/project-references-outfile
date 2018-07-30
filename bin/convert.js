@@ -14,11 +14,11 @@ var Convert;
     // Takes a number like 14 and returns a string like `1' 2"`
     function formatInches(i) {
         if (i < 12) {
-            return i + "\"";
+            return `${i}"`;
         }
-        var ft = Math.floor(i / 12);
+        const ft = Math.floor(i / 12);
         i = i - ft * 12;
-        return ft + "' " + Utils.leftPad(i.toString(), 2);
+        return `${ft}' ${Utils.leftPad(i.toString(), 2)}`;
     }
     Convert.formatInches = formatInches;
 })(Convert || (Convert = {}));

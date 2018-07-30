@@ -20,7 +20,7 @@ var Utils;
     }
     Utils.leftPad = leftPad;
     function roundTo(n, places) {
-        var f = Math.pow(10, places);
+        const f = Math.pow(10, places);
         return Math.round(n * f) / f;
     }
     Utils.roundTo = roundTo;
@@ -42,11 +42,11 @@ var Convert;
     // Takes a number like 14 and returns a string like `1' 2"`
     function formatInches(i) {
         if (i < 12) {
-            return i + "\"";
+            return `${i}"`;
         }
-        var ft = Math.floor(i / 12);
+        const ft = Math.floor(i / 12);
         i = i - ft * 12;
-        return ft + "' " + Utils.leftPad(i.toString(), 2);
+        return `${ft}' ${Utils.leftPad(i.toString(), 2)}`;
     }
     Convert.formatInches = formatInches;
 })(Convert || (Convert = {}));
@@ -67,11 +67,11 @@ showTempConversion();
 showLengthConversion();
 /// <reference path="../bin/convert.d.ts" />
 function showTempConversion() {
-    console.log("The boiling point of water in F is " + Convert.cToF(100));
+    console.log(`The boiling point of water in F is ${Convert.cToF(100)}`);
 }
 function showLengthConversion() {
     var i = 35;
     var i = 10;
-    console.log(i + " inches formats as " + Convert.formatInches(i) + "\"");
+    console.log(`${i} inches formats as ${Convert.formatInches(i)}"`);
 }
 //# sourceMappingURL=cli.js.map
