@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "module": "none",
+    "module": "es2015",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
