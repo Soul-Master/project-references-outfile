@@ -19,3 +19,7 @@ export function formatInches(i: number) {
     
     return `${ft}' ${leftPad(i.toString(), 2)}`;
 }
+
+export const config: WebComponentsApi = {
+    ready: true
+};

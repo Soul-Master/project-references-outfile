@@ -7,3 +7,7 @@ export function roundTo(n: number, places: number) {
     const f = Math.pow(10, places);
     return Math.round(n * f) / f;
 }
+
+export const x: WebComponentsApi = {
+    ready: true
+};

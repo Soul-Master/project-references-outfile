@@ -5,10 +5,11 @@
   },
   "references": [
     {
-      "path": "../utils"
-    },
-    {
       "path": "../converter"
     }
+  ],
+  "include": [
+    "../utils/typings/**/*",
+    "**/*"
   ]
 }
