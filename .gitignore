@@ -4,3 +4,6 @@
 
 /cli/build
 /.vs
+/package-lock.json
+/src/build
+/test/build

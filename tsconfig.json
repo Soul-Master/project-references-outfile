@@ -1,8 +1,7 @@
 {
   "references": [
-    { "path": "cli" },
-    { "path": "converter" },
-    { "path": "utils" }
+    { "path": "src" },
+    { "path": "test" }
   ],
     "files": []
 }

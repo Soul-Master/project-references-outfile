@@ -1,11 +1,35 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "target": "es2016",
-    "module": "es2015",
+    "composite": true,
     "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "strict": true,
-    "composite": true
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "noEmitHelpers": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "keyofStringsOnly": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es5",
+      "es2015.core",
+      "es2015.collection",
+      "es2015.iterable",
+      "es2015.promise",
+      "es2016.array.include",
+      "es2017.object"
+    ],
+    "moduleResolution": "node",
+    "plugins": [
+      {
+        "name": "tslint-language-service",
+        "ignoreDefinitionFiles": true
+      }
+    ]
   }
 }
