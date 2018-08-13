@@ -1,20 +1,24 @@
 # TypeScript 3 - Composite Project Demo
 
-Please install TypeScript 3.0.1+ as global package on your machine before test this repository.
+## All in one command
 
-## Compile all projects
+```
+npm start
+```
+
+## TypeScript 3 - Compile all projects
 
 ```
 tsc -b
 ```
 
-## Compile src projects
+## TypeScript 3 - Compile src projects
 
 ```
 tsc -b src
 ```
 
-## Compile test projects
+## TypeScript 3 - Compile test projects
 
 ```
 tsc -b test

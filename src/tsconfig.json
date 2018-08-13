@@ -1,6 +1,18 @@
 {
-  "extends": "../tsconfig_base.json",
+  "extends": "../configs/tsconfig.base",
   "compilerOptions": {
-    "outDir": "./build"
-  }
+    "module": "amd",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "declaration": true,
+    "composite": true,
+    "types":[]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "build"
+  ]
 }

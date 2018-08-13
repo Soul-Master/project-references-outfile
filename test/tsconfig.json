@@ -1,13 +1,30 @@
 {
-  "extends": "../tsconfig_base.json",
-  "compilerOptions": {
-    "outDir": "./build"
-  },
-  "references": [
-    { "path": "../src" }
-  ],
-  "include": [
-    "../src/typings/**/*",
-    "**/*"
-  ]
-}
+    "extends": "../configs/tsconfig.base",
+    "compilerOptions": {
+      "module": "amd",
+      "outDir": "./build",
+      "baseUrl": ".",
+      "typeRoots": [
+          "../node_modules/@types",
+          "../src/typings",
+          "./typings"
+      ],
+      "types":[
+        'less',
+        'webcomponentsjs',
+        'test-framework'
+      ],
+      "paths": {
+        "@app/*": [ "../src/*" ]
+      }
+    },
+    "references": [
+      { "path": "../src" }
+    ],
+    "include": [
+      "**/*"
+    ],
+    "exclude": [
+      "build"
+    ]
+  }

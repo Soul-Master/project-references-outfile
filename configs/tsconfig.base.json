@@ -1,0 +1,41 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es2016",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictFunctionTypes": true,
+        "alwaysStrict": true,
+        "noEmitHelpers": true,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true,
+        "keyofStringsOnly": true,
+        // Common ES2016 - Proxy
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es5",
+            "es2015.core",
+            "es2015.collection",
+            "es2015.iterable",
+            "es2015.promise",
+            "es2016.array.include",
+            "es2017.object"
+        ],
+        "moduleResolution": "node",
+        "plugins": [
+            {
+                "name": "tslint-language-service",
+                "ignoreDefinitionFiles": true
+            }
+        ]
+    },
+    "exclude": [
+        "build",
+        "lib"
+    ],
+    "include": [
+        "**/*"
+    ]
+}

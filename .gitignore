@@ -1,9 +1,5 @@
-/utils/build
-
-/converter/build
-
-/cli/build
-/.vs
-/package-lock.json
 /src/build
 /test/build
+/node_modules
+/package-lock.json
+/.vs
