@@ -10,9 +10,9 @@
           "./typings"
       ],
       "types":[
-        'less',
-        'webcomponentsjs',
-        'test-framework'
+        "less",
+        "webcomponentsjs",
+        "test-framework"
       ],
       "paths": {
         "@app/*": [ "../src/*" ]
