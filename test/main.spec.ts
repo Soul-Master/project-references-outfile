@@ -1,6 +1,6 @@
 import * as main from '@app/js/main';
 import * as util from '@app/js/util';
-import * as lib1 from '@app/lib/lib1';
+import * as lib1 from '../src/lib/lib1';
 
 console.log('main.settings: ' + main.mainSettings.foo);
 console.log('util.settings: ' + main.utilSettings.boo);
